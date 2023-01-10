@@ -11,3 +11,12 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/Nics-Github/MTH142Rtutorials
 BugReports: https://github.com/Nics-Github/MTH142Rtutorials/issues
+Imports: 
+    dplyr,
+    learnr,
+    mosaic,
+    openintro,
+    readr,
+    readxl,
+    shiny,
+    tidyr
