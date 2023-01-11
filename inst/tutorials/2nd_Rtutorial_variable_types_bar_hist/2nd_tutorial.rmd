@@ -1,7 +1,12 @@
 ---
-title: "Tutorial 2"
+title: "Tutorial 2: Variables"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "Exploring different variables"
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
@@ -30,8 +35,9 @@ assignment is on the last page.
     ).
 
 2.  Load the following libraries and prevent scientific notation by
-    copying and pasting the following into the chunk below: 
-    -   library(openintro) 
+    copying and pasting the following into the chunk below:
+
+    -   library(openintro)
     -   library(mosaic)
     -   options(scipen=10)
 
@@ -76,15 +82,16 @@ quiz(
 )
 ```
 
-6.  What do we want to learn about lending club borrowers from the tables of data?
+6.  What do we want to learn about lending club borrowers from the
+    tables of data?
 
 ## Graphing
 
 ### Categorical
 
 To start we'll use `gf_bar()` to graph the categorical variable `state`.
-Fill in the add the variable and dataframe names then run the
-chunk below.
+Fill in the add the variable and dataframe names then run the chunk
+below.
 
 ```{r gf-bar, exercise = TRUE}
 gf_bar(~,data=)
@@ -119,8 +126,7 @@ gf_histogram(~"variable_name",data="data frame name")
 
 ### Go back to the graphs above and add an x-axis label, a title and some color.
 
-
-See your assignment below 
+See your assignment below
 
 ## Assignment
 
@@ -128,17 +134,39 @@ See your assignment below
 
 In a new Rmarkdown file.
 
--   Choose one categorical or numeric variable from loan50 and make a bar chart or histogram. You cannot use the `state` or `emp_length` variable.
+-   Choose one categorical or numeric variable from loan50 and make a
+    bar chart or histogram. You cannot use the `state` or `emp_length`
+    variable.
 
--   If categorical: state whether the variable is (ordinal or nominal). If numeric: state whether it is discrete or continuous and why.
+-   If categorical: state whether the variable is (ordinal or nominal).
+    If numeric: state whether it is discrete or continuous and why.
 
--   Output the Rmarkdown file as html (be sure to see the 1st R tutorial for this).
+-   Output the Rmarkdown file as html (be sure to see the 1st R tutorial
+    for this).
 
 -   Post these in the the second Rtutorial forum.
 
 ### Part 2. 1 point
 
-For this part of the assignment you are to post a reply to a classmate's assignment.
+For this part of the assignment you are to post a reply to a classmate's
+assignment.
 
 Do you agree or disagree that the variable is the correct type? Why?
 
+### Assignment Outline
+
+Here is the
+[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/2nd_Rtutorial_variable_types_bar_hist/2nd_tutorial_outline.txt).
+Copy and paste it from here and paste it into a new .rmd file.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)

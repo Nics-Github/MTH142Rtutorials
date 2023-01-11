@@ -1,7 +1,9 @@
 ---
-title: "Tutorial 7"
+title: "Tutorial 7: Confidence Interval with prop.test()"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "In this tutorial we'll calculate confidence intervals with the Binomial Distribution"
 ---
 
 ```{r setup, include=FALSE}
@@ -76,3 +78,22 @@ In an Rmarkdown file:
 -   Suppose that someone told you the true proportion of students in the number of exclusive relationships that you chose is 15%. Would you agree based on your confidence interval. Why or why not?
 
 Knit your file as a pdf and submit it to the forums.
+
+### Assignment Outline
+
+Here is the
+[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/7th_Rtutorial_Prop_CI/7th_Rtutorial_outline.txt).
+Copy and paste it from here and paste it into a new .rmd file.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+

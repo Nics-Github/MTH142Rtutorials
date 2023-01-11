@@ -1,8 +1,9 @@
 ---
-title: "Tutorial 4"
-author: "Prof Schwab"
+title: "Tutorial 4: Data Input"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "This walks through a method to input data to Rstudio"
 ---
 
 ```{r setup, include=FALSE}
@@ -92,3 +93,15 @@ Solution for case 3: Import your data again and copy and paste the code that pop
 This happens when we use the older `fav_stats()` and not `favstats()`. 
 
 Solution: Never use `fav_stats()`, only use `favstats()`.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)

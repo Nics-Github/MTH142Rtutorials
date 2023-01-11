@@ -1,8 +1,9 @@
 ---
-title: "Tutorial 1"
+title: "Tutorial 1: Getting Started"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
-description: "This tutorial is to help you get started with R in MTH 142"
+description: "This tutorial is to help you get started with Rstudio in MTH 142"
 ---
 
 ```{r setup, include=FALSE}
@@ -27,9 +28,20 @@ username: nschwab\@hcc.edu
 
 password: \*\*\*\*\*\*\*\*
 
+## Load the tutorial libraries: 
+
+Run this line of code in the console:
+
+
+Press 3 to update no packages.
+
+A bunch of code will run, you shouldn't have to do this again. 
+
 ## Tour of Rstudio
 
 To help remember all of the things we need for this class, I've made a cheat sheet. Let's reference it to do the following:
+
+-   Where are the `MTH142Rtutorials`? How do I run a tutorial
 
 -   Make your first .Rmd
 
@@ -76,3 +88,16 @@ To help remember all of the things we need for this class, I've made a cheat she
 -   Save it as your_name_tut_1.Rmd
 
 -   Knit your markdown file as .html and post it to the 1st R tutorial forum.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+

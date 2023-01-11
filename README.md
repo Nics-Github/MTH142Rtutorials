@@ -3,7 +3,7 @@
 
 # MTH142Rtutorials
 
-This package is a collection of 14 leanr tutorials I made for an Intro
+This package is a collection of 14 learnr tutorials I made for an Intro
 to Statistics Course taught at Holyoke Community College.
 
 I use the `mosaic` , `openintro`, and `tidyverse` packages. Formula \~
@@ -24,17 +24,14 @@ You can install the development version of MTH142Rtutorials from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("Nics-Github/MTH142Rtutorials")
+remotes::install_git("https://github.com/Nics-Github/MTH142Rtutorials")
 ```
-
-Due to a server issue students in my class will install it manually
-once.
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to load the library.
 
 ``` r
+#Load the libraries
 library(MTH142Rtutorials)
 ```

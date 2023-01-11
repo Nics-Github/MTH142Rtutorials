@@ -1,7 +1,9 @@
 ---
-title: "Tutorial"
+title: "Tutorial 9: Proportion Hypothesis Test"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "In this tutorial we'll set up and run a single proportion hypothesis test."
 ---
 
 ```{r setup, include=FALSE}
@@ -129,3 +131,22 @@ You are to conduct a bare bones hypothesis test in R with data from a random yea
 -   Output your test an html file from an R Markdown file. I have posted a skeleton Rmarkdown for you to use.
 
 -   Post the html output of your Rmarkdown file to the forum. See the video and my output for the format.
+
+### Assignment Outline
+
+Here is the
+[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/9th_Rtutorial_1_Prop_test/9th_Rtutorial_outline.txt).
+Copy and paste it from here and paste it into a new .rmd file.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+

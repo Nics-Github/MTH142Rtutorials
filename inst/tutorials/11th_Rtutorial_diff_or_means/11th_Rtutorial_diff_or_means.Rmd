@@ -1,13 +1,15 @@
 ---
-title: "Tutorial"
+title: "Tutorial 11: Difference of Means t.test()"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "This tutorial walks through a difference of means t.test()"
 ---
 
 ```{r setup, include=FALSE}
 library(learnr)
 library(readxl)
-Problem_1_data <- read_excel("~/Tutorials/11th_Rtutorial_diff_or_means/Problem-1-data.xlsx")
+Problem_1_data <- read_excel("~/GitHub/MTH142Rtutorials/inst/tutorials/11th_Rtutorial_diff_or_means/Problem-1-data.xlsx")
 library(mosaic)
 library(openintro)
 knitr::opts_chunk$set(echo = FALSE)
@@ -102,4 +104,24 @@ Don't forget to discuss independence and normality. If you do find outliers choo
 -   `gf_boxplot(sat_v~sex,group=~sex,data=satgpa)`
 
 There is an outline available if you want to use it. 
+
+### Assignment Outline
+
+Here is the
+[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/11th_Rtutorial_diff_or_means/11th_Rtutorial_outline.txt).
+Copy and paste it from here and paste it into a new .rmd file.
+
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+
 

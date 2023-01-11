@@ -1,7 +1,9 @@
 ---
-title: "Tutorial"
+title: "Tutorial 10: Single mean C.I."
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "I'll show you how to use t.test() to do a single mean hypothesis test."
 ---
 
 ```{r setup, include=FALSE}
@@ -128,4 +130,17 @@ xpt(q=0.7516402,df=18,lower.tail=FALSE)
 
 
 ## No Assignment Due 
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+
 

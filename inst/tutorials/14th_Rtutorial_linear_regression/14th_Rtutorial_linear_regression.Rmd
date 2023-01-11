@@ -1,7 +1,9 @@
 ---
-title: "Tutorial 14"
+title: "Tutorial 14: Linear Regression"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "We'll do a linear regression from data"
 ---
 
 ```{r setup, include=FALSE}
@@ -130,3 +132,20 @@ Make a linear regression model for `Age` vs `Price` from the `Mustangs` data fra
 Give the equation, correlation coefficient, a title, and good x and y axes labels. 
 
 Knit your document as an html and post it to the forum. 
+
+Here is the
+[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/14th_Rtutorial_linear_regression/14th_Rtutorial_outline.txt).
+Copy and paste it from here and paste it into a new .rmd file.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+

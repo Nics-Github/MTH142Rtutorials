@@ -1,7 +1,9 @@
 ---
-title: "Tutorial"
+title: "Tutorial 13: The filter() function (e.c)"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+descriptions: "We'll use the pipe %>% and the filter() function to remove outliers from a dataset."
 ---
 
 ```{r setup, include=FALSE}
@@ -96,4 +98,17 @@ gf_boxplot(time_hrs~division,data=nyc_marathon_no_outs,coef=1.5)
 It looks like there is still an outlier in the Men's division. But there is not! We removed the outliers from `nyc_marathon` but we changed the dataset with `filter()`. When we did this R forgot about the original data `nyc_marathon` and is calculating outliers in the new `nyc_marathon_no_outs` data. We have to understand all the outliers from the original dataset have been removed, we should not remove more. To cover up this fake outlier we can change the `coef` argument to 2. 
 
 ## No Assignment Due
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+
 

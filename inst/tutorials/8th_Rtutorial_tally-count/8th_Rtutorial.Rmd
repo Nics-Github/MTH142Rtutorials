@@ -1,7 +1,9 @@
 ---
-title: "Tutorial 8"
+title: "Tutorial 8: Counting data"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "We'll use count() and tally() on data."
 ---
 
 ```{r setup, include=FALSE}
@@ -45,3 +47,16 @@ You'll need to do this in the setup chunk of the project.
 ## No Assignment
 
 You don't have to turn in anything special for this tutorial.
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+

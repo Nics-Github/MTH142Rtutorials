@@ -1,7 +1,9 @@
 ---
-title: "Tutorial 6"
+title: "Tutorial 6: Probability Distributions"
+author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "This tutorial will walk you through finding probabilites with the normal and binomila distributions"
 ---
 
 ```{r setup, include=FALSE}
@@ -84,3 +86,16 @@ dbinom(0, size =10, prob=0.697) +
 You will have to get creative in answering other questions, if you need help post in the forums.
 
 ## No Assignment
+
+## Stop this tutorial when done
+
+Don't forget to stop this tutorial. You can
+
+-   Use the little stop sign in the "background jobs" tab.
+
+![](images/background_jobs_stopsign.png)
+
+-   Use the little stop sign in the "tutorial tab"
+
+![](images/tutorial_stop_sign.png)
+
