@@ -32,11 +32,16 @@ password: \*\*\*\*\*\*\*\*
 
 Run this line of code in the console:
 
-`remotes::install_git("https://github.com/Nics-Github/MTH142Rtutorials")`
+remotes::install_git("https://github.com/Nics-Github/MTH142Rtutorials")
 
-Press `3` to update no packages.
+Press 3 to update no packages.
 
 A bunch of code will run, you shouldn't have to do this again.
+
+Go to the `session` menu and click `Restart R`
+
+Type `library(MTH142Rtutorials)` to load the tutorials
+
 
 ## Tour of Rstudio
 

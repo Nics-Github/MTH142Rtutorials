@@ -36,6 +36,10 @@ Press `3` to update no packages.
 
 A bunch of code will run, you shouldn't have to do this again.
 
+Go to the `session` menu and click `Restart R`
+
+Type `library(MTH142Rtutorials)` to load the tutorials
+
 ## Tour of Rstudio
 
 To help remember all of the things we need for this class, I've made a cheat sheet. Let's reference it to do the following:
