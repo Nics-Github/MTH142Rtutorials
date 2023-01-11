@@ -2,6 +2,7 @@
 title: "Tutorial 1"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "This tutorial is to help you get started with R in MTH 142"
 ---
 
 ```{r setup, include=FALSE}
