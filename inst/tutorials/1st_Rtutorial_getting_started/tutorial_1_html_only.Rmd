@@ -28,7 +28,11 @@ password: \*\*\*\*\*\*\*\*
 
 ## Load the tutorial libraries:
 
+Make sure you are running R 4.2.1  not R 4.1.1
+
 Run this line of code in the console:
+
+`install.packages("remotes")`
 
 `remotes::install_git("https://github.com/Nics-Github/MTH142Rtutorials")`
 

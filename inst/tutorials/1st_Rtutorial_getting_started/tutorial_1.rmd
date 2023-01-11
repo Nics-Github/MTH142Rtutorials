@@ -30,13 +30,17 @@ password: \*\*\*\*\*\*\*\*
 
 ## Load the tutorial libraries:
 
-Run this line of code in the console:
+Make sure you are running R 4.2.1  not R 4.1.1
 
-remotes::install_git("https://github.com/Nics-Github/MTH142Rtutorials")
+Run these lines of code in the console:
+
+`install.packages("remotes")`
+
+`remotes::install_git("https://github.com/Nics-Github/MTH142Rtutorials")`
 
 Press 3 to update no packages.
 
-A bunch of code will run, you shouldn't have to do this again.
+A bunch of code will run.
 
 Go to the `session` menu and click `Restart R`
 
