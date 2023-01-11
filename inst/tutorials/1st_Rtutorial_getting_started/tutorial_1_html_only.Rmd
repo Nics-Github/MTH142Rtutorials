@@ -1,14 +1,12 @@
 ---
 title: "Tutorial 1: Getting Started"
 author: "Nicholas Schwab"
-output: learnr::tutorial
-runtime: shiny_prerendered
+output: html_document
 description: "This tutorial is to help you get started with Rstudio in MTH 142"
 ---
 
 ```{r setup, include=FALSE}
-library(learnr)
-library(shiny)
+
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
@@ -96,8 +94,8 @@ Don't forget to stop this tutorial. You can
 
 -   Use the little stop sign in the "background jobs" tab.
 
-![](images/background_jobs_stopsign.png)
+![](~/GitHub/MTH142Rtutorials/images/background_jobs_stopsign.png)
 
 -   Use the little stop sign in the "tutorial tab"
 
-![](images/tutorial_stop_sign.png)
+![](~/GitHub/MTH142Rtutorials/images/tutorial_stop_sign.png)

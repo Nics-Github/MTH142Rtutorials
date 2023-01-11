@@ -146,10 +146,7 @@ You are to create a html file from an Rmarkdown file.
 
 ### Assignment Outline
 
-Here is the
-[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/5th_Rtutorial/5th_Rtutorial_outline.txt).
-Copy and paste it from here and paste it into a new .rmd file.
-
+Here is the [outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/5th_Rtutorial/5th_Rtutorial_outline.txt). Copy and paste it from here and paste it into a new .rmd file.
 
 ## Stop this tutorial when done
 
