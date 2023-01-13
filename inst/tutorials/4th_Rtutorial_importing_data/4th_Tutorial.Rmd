@@ -33,7 +33,9 @@ You will need to put data into R in order to do computations with it. This tutor
 
 7.  Copy the code that is generated and put it into the setup chunk of a .Rmd (If you are working in the console, you can skip this part. But you'll need to do this for future projects).
 
-8.  You can now do statistics on this data.
+8.  Make your imported data into a dataframe and save it with `HW2_number_7_df <- dataframe(HW2_part1_number_7)`
+
+9.  You can now do statistics on this data.
 
 ## Make a vector
 

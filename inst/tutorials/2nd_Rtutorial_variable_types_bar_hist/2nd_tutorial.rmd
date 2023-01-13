@@ -30,7 +30,8 @@ assignment is on the last page.
 
 ## Video
 
-(This is the video of me walking through this tutorial)[https://youtu.be/nlt6JnvbtDw]
+This is the [video](https://youtu.be/nlt6JnvbtDw) of me walking through
+this tutorial.
 
 ## Exploring the Data
 
@@ -94,8 +95,7 @@ quiz(
 ### Categorical
 
 To start we'll use `gf_bar()` to graph the categorical variable `state`.
-Fill in the state variable and dataframe names then run the chunk
-below.
+Fill in the state variable and dataframe names then run the chunk below.
 
 ```{r gf-bar, exercise = TRUE}
 gf_bar(~,data=)
