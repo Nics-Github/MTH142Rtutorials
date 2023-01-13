@@ -1,7 +1,7 @@
 % File ~/GitHub/MTH142Rtutorials/man/list_of_tutorials.Rd
 \name{list_of_tutorials}
-\alias{list_of_tutorials}
-\title{This is a list of the MTH 142 R tutorials}
+\alias{MTH142Rtutorials}
+\title{This is a list of the MTH 142 Rtutorials}
 \description{
 The MTH142Rtutorial library has no functions. Below is a list of the tutorials and a short description of each one.
 
