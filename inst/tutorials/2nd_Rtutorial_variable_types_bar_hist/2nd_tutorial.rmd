@@ -28,11 +28,15 @@ We are going to consider the `loan50` data frame from chapter 1 in the
 text. More detail is given in the video called "First R tutorial." Your
 assignment is on the last page.
 
+## Video
+
+(This is the video of me walking through this tutorial)[https://youtu.be/nlt6JnvbtDw]
+
 ## Exploring the Data
 
 1.  Read about the data. (Summary on page 12 in the text. [More info on
     openintro.org](https://www.openintro.org/data/index.php?data=loan50)
-    ).
+    ) or type `?loan50`.
 
 2.  Load the following libraries and prevent scientific notation by
     copying and pasting the following into the chunk below:
@@ -90,7 +94,7 @@ quiz(
 ### Categorical
 
 To start we'll use `gf_bar()` to graph the categorical variable `state`.
-Fill in the add the variable and dataframe names then run the chunk
+Fill in the state variable and dataframe names then run the chunk
 below.
 
 ```{r gf-bar, exercise = TRUE}
@@ -141,7 +145,7 @@ In a new Rmarkdown file.
 -   If categorical: state whether the variable is (ordinal or nominal).
     If numeric: state whether it is discrete or continuous and why.
 
--   Output the Rmarkdown file as html (be sure to see the 1st R tutorial
+-   Output the Rmarkdown file as pdf (be sure to see the 1st R tutorial
     for this).
 
 -   Post these in the the second Rtutorial forum.
