@@ -10,7 +10,7 @@ description: "We'll walk through an ANOVA hypothesis test."
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 library(readxl)
-HW_7_part_5_number_4 <-read_excel("~/GitHub/MTH142Rtutorials/inst/tutorials/12th_Rtutorial_ANOVA/HW_7_part_5_number_4.xlsx")
+HW_7_part_5_number_4 <-read_excel("./HW_7_part_5_number_4.xlsx")
 library(tidyr)
 library(mosaic)
 ```

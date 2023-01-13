@@ -10,6 +10,7 @@ description: "This tutorial is to help you get started with Rstudio in MTH 142"
 library(learnr)
 library(shiny)
 knitr::opts_chunk$set(echo = FALSE)
+
 ```
 
 ## Introduction
@@ -129,7 +130,7 @@ To help remember all of the things we need for this class, I've made a cheat she
 
 -   Save it as your_name_tut_1.Rmd
 
--   Knit your markdown file as .html and post it to the 1st R tutorial forum.
+-   Knit your markdown file as .pdf and post it to the 1st R tutorial forum.
 
 ## Stop this tutorial when done
 
@@ -137,8 +138,8 @@ Don't forget to stop this tutorial. You can
 
 -   Use the little stop sign in the "background jobs" tab.
 
-![](images/background_jobs_stopsign.png)
+![](./images/background_jobs_stopsign.png)
 
 -   Use the little stop sign in the "tutorial tab"
 
-![](images/tutorial_stop_sign.png)
+![](./images/tutorial_stop_sign.png)

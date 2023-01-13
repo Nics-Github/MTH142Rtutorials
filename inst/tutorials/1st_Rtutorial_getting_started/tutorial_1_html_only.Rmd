@@ -102,8 +102,8 @@ Don't forget to stop this tutorial. You can
 
 -   Use the little stop sign in the "background jobs" tab.
 
-![](~/GitHub/MTH142Rtutorials/images/background_jobs_stopsign.png)
+![](./images/background_jobs_stopsign.png)
 
 -   Use the little stop sign in the "tutorial tab"
 
-![](~/GitHub/MTH142Rtutorials/images/tutorial_stop_sign.png)
+![](./images/tutorial_stop_sign.png)
