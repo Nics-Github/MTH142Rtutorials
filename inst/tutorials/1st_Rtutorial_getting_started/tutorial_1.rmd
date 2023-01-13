@@ -17,6 +17,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 We'll be using Rstudio for statistical computation in this course. We will log onto the Rstudio server which lives on a computer at HCC. You can install R and Rstudio on your personal computer, if you'd like, but that is in another video.
 
+## Video
+
+[This is the video of me walk through this tutorial](https://youtu.be/G0H2mByoR0U)
+
 ## Log into the server
 
 1.  Navigate your browser to: <http://hcc-rstudiosrv1.hcc.edu:8787/auth-sign-in>

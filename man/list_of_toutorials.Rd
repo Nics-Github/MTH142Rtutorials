@@ -33,9 +33,9 @@ The MTH142Rtutorial library has no functions. Below is a list of the tutorials a
 
 
 \examples{
-# Run the 12th learnr tutorial
+# Run the 1st Rtutorial
 
-learnr::run_tutorial(12th_Rtutorial_ANOVA,package="MTH142Rtutorials")
+learnr::run_tutorial("1st_Rtutorial_getting_started",package="MTH142Rtutorials")
 }
 \keyword{MTH142Rtutorial}
 
