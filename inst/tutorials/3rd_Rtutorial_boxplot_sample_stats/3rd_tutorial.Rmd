@@ -72,7 +72,7 @@ quiz(
 
 4.  Let's find some sample statistics. `favstats()` from the `mosaic`
     library will spit out the normal summary statistics. You can see the
-    all the statistics you need document for more functions we can use
+    "all the statistics you need" document for more functions we can use
     here.
 
 ```{r summary-stats, exercise = TRUE}
