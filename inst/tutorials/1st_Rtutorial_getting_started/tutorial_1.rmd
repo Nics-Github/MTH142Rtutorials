@@ -33,38 +33,38 @@ username: nschwab\@hcc.edu
 
 password: \*\*\*\*\*\*\*\*
 
-<!-- ## Install tinytex() -->
+## Install tinytex()
 
-<!-- ### Attempt 1 -->
+### Attempt 1
 
-<!-- Copy and paste into the console: `tinytex:::is_tinytex()` and hit enter - If the word TRUE shows, you are done, and you can close this and move on. - If FALSE go to the next step. -->
+Copy and paste into the console: `tinytex:::is_tinytex()` and hit enter - If the word TRUE shows, you are done, and you can close this and move on. - If FALSE go to the next step.
 
-<!-- ### Attempt 2 -->
+### Attempt 2
 
-<!-- -   Copy and paste into the console: tinytex::install_tinytex() and hit enter You will see a bunch of red script-let it run until it stops. -->
-<!-- -   At the top click Session \> Restart R -->
-<!-- -   Copy and paste into the console: tinytex:::is_tinytex() and hit enter -->
-<!--     -   If the word TRUE shows, you are done, and you can close this and move on. -->
-<!--     -   If FALSE go to the next step -->
+-   Copy and paste into the console: tinytex::install_tinytex() and hit enter You will see a bunch of red script-let it run until it stops.
+-   At the top click Session \> Restart R
+-   Copy and paste into the console: tinytex:::is_tinytex() and hit enter
+    -   If the word TRUE shows, you are done, and you can close this and move on.
+    -   If FALSE go to the next step
 
-<!-- ### Attempt 3 -->
+### Attempt 3
 
-<!-- -   Copy and paste into the console: `install.packages("tinytex")` and hit enter\ -->
-<!--     You will see a bunch of red script- let it run until it stops -->
+-   Copy and paste into the console: `install.packages("tinytex")` and hit enter\
+    You will see a bunch of red script- let it run until it stops
 
-<!-- -   At the top click Session \> Restart R -->
+-   At the top click Session \> Restart R
 
-<!-- -   Copy and paste into the console: `tinytex:::is_tinytex()` and hit enter -->
+-   Copy and paste into the console: `tinytex:::is_tinytex()` and hit enter
 
-<!--     -   If the word TRUE shows, you are done, and you can close this and move on. -->
+    -   If the word TRUE shows, you are done, and you can close this and move on.
 
-<!--     -   If FALSE go to the next step -->
+    -   If FALSE go to the next step
 
-<!-- ### Attempt 4 -->
+### Attempt 4
 
-<!-- -   Click the little red power button in the upper right hand corner to end the session. -->
+-   Click the little red power button in the upper right hand corner to end the session.
 
-<!-- -   Then start a new session and type `tinytex:::is_tinytex()` if it says FALSE contact me. -->
+-   Then start a new session and type `tinytex:::is_tinytex()` if it says FALSE contact me.
 
 ## Load the tutorial libraries
 

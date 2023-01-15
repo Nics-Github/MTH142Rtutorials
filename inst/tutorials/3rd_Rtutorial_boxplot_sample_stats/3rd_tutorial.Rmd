@@ -24,7 +24,8 @@ show how to use the mosaic package to calculate summary statistics and
 gf_boxplot to make box plots. Your assignment is on the last page.
 
 1.  read about the data set. ([see
-    openintro.org](https://www.openintro.org/data/index.php?data=fastfood)) or ?fastfood
+    openintro.org](https://www.openintro.org/data/index.php?data=fastfood))
+    or ?fastfood
 
 2.  Load the openintro library for the data and the mosaic library for
     the functions by typing them into the console.
@@ -37,6 +38,11 @@ gf_boxplot to make box plots. Your assignment is on the last page.
 library(openintro)
 library(mosaic)
 ```
+
+## Video
+
+This is the [video](https://youtu.be/v57f6nmDWqg) of me walking through
+this Rtutorial.
 
 ## Sample Statistics
 
@@ -81,8 +87,7 @@ favstats(~calories,data=fastfood)
 
 5.  Notice the `calories` are all over the place from 20 to 2430, this
     is caused by the different types of foods from salads to burgers to
-    fries. We should edit the formula to group the food by
-    restaurants.
+    fries. We should edit the formula to group the food by restaurants.
 
 ```{r summary-stats-rest, exercise = TRUE}
 favstats(calories~restaurant,data=fastfood)
@@ -179,4 +184,3 @@ Don't forget to stop this tutorial. You can
 -   Use the little stop sign in the "tutorial tab"
 
 ![](images/tutorial_stop_sign.png)
-
