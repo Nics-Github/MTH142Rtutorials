@@ -19,7 +19,7 @@ We'll be using Rstudio for statistical computation in this course. We will log o
 
 ## Video
 
-[This is the video of me walk through this tutorial](https://youtu.be/G0H2mByoR0U)
+[This is the video of me walk through this tutorial](https://youtu.be/EEEEFXmxm2s)
 
 ## Log into the server
 
