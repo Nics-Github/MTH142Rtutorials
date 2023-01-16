@@ -1,7 +1,7 @@
 Package: MTH142Rtutorials
 Type: Package
 Title: 14 Statistics tutorials
-Version: 0.1.0
+Version: 0.1.1
 Author: Nicholas Schwab
 Maintainer: Nic Schwab <nschwab@hcc.edu>
 Description: This package is a collection of 14 learnr tutorials that I made for an Intro to Statistics Course taught at Holyoke Community College.I use the `mosaic` , `openintro`, and `tidyverse` packages. Formula \~ syntax is used whenever possible.The textbook is OpenIntro's Introduction to Statistics. MyOpenMath is the LMS and has homework problems from the text.There is a template course on MyOpenMath that was put together by Adam Gilbert of Southern New Hampshire University. If you'd like to copy my template please contact me via the email link above.
