@@ -19,9 +19,9 @@ In this tutorial you will make a histogram, a boxplot, and run `favstats()` brok
 
 ## Make a histogram
 
-We make a histogram back in 2nd Rtutorial, remember to use gf_histogram() our variable must be numeric.
+We made a histogram back in 2nd Rtutorial. Remember to use gf_histogram(), our variable must be numeric.
 
-1.  For this document tutorial we'll use the `run17` dataframe from `openintro`. Read about it here. Load the libraries in the chunk below.
+1.  For this document tutorial we'll use the `run17` dataframe from `openintro`. Read about it with `?run17` after you load the libraries in the chunk below.
 
 ```{r library, exercise = TRUE}
 
