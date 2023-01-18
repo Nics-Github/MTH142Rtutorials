@@ -2,10 +2,10 @@
 title: "5th_Rtutorial_outline"
 author: "Student name"
 date: "`r Sys.Date()`"
-output: html_document
+output: pdf_document
 ---
 ```{r setup, include=FALSE}
-library(learnr)
+
 library(openintro)
 library(mosaic)
 knitr::opts_chunk$set(echo = FALSE)
