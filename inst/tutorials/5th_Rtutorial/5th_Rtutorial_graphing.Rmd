@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this tutorial you will make a histogram, a boxplot, and run `favstats()` broken up by variable levels. Post questions in the forums. Your assignment is on the last page.
 
+[Here is the video of me walking through this tutorial](https://youtu.be/Q2BKziixGo8)
+
 ## Make a histogram
 
 We made a histogram back in 2nd Rtutorial. Remember to use gf_histogram(), our variable must be numeric.
