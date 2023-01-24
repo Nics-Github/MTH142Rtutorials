@@ -22,7 +22,7 @@ loan50
 
 ```{r gf-bar-hist }
 gf_bar(~_____,data=)
-gf_hist(~_____,data=)
+gf_histogram(~_____,data=)
 ```
 
 If your variable is categorical: state whether the variable is (ordinal or nominal). If numeric: state whether it is discrete or continuous and why.
