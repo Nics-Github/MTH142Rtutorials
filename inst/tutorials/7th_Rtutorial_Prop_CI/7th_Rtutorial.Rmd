@@ -53,6 +53,18 @@ library()
 
 3.  I want to know the true proportion of students who have had 1 exclusive relationship (aka the parameter). Since the binomial distribution is based on successes, we have to tell R what represents a success. The variable that has the successes is `num`. Make a 90% C.I. for the number of students that have had one exclusive relationships by typing \~num==1. Try it below.
 
+### Verify Independence and Success Failure Criterion
+
+First Verify Independence by reasoning through it (see video). Then check to be sure we have at least 10 successes and 10 failures. You can use the tally() function for that. 
+
+```{r couting-success,exercise=TRUE, exercise.eval=FALSE}
+tally(~num==1,data=exclusive_relationship)
+```
+
+```{r exclusive-relationship-0, exercise=TRUE, exercise.eval=FALSE, exercise.lines=3}
+prop.test(~num ==______,data=_______,conf.level=, correct= "FALSE")
+```
+
 ```{r exclusive-relationship-0, exercise=TRUE, exercise.eval=FALSE, exercise.lines=3}
 prop.test(~num ==______,data=_______,conf.level=, correct= "FALSE")
 ```
@@ -62,6 +74,8 @@ prop.test(~num == 1,data=exclusive_relationship,conf.level=0.90, correct= "FALSE
 ```
 
 \* If you want to use `view()` or `head()` to look at the data load the tidyverse. Otherwise just type `exclusive_relationship`
+
+
 
 ## Assignment
 

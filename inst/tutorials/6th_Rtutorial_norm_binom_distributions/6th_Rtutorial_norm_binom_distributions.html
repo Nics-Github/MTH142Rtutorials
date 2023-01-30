@@ -127,16 +127,25 @@ is split into two parts: Part 1 is the Normal distribution and Part 2 is
 the Binomial Distribution. There is no assignment associated with this
 tutorial.</p>
 </div>
+<div id="section-video" class="section level2">
+<h2>Video</h2>
+<p>Here’s <a href="https://youtu.be/IQbDnnXxCqs">the video</a> of me
+doing the 6th Rtutorial.</p>
+</div>
 <div id="section-part-1-normal-distribution" class="section level2">
 <h2>Part 1: Normal Distribution</h2>
 <ol style="list-style-type: decimal">
 <li><p>Open Rstudio and load the mosaic package. Open the MTH 142 cheat
 sheet.</p></li>
-<li><p>Let’s look at Homework 4 part 1 number 1. I’ll type:</p></li>
+<li><p>This is Homework 4 part 1 number 1: Find the probability of each
+of the following, if <span class="math inline">\(Z \sim N(\mu = 0,\sigma
+= 1)\)</span>. a) P(Z &lt; -1.35)</p></li>
 </ol>
+<p>I’ll type:</p>
 <p><code>xpnorm(-1.35,mean=0,sd=1)</code></p>
 <ol start="3" style="list-style-type: decimal">
-<li>To do number 1 part c. We have to do abit more work:</li>
+<li>To find P(-0.4 &lt; Z &lt; 1.5) from part c. We have to do a bit
+more work:</li>
 </ol>
 <ul>
 <li>We have to calculate the area lower than the z-score -0.4 with
@@ -160,9 +169,11 @@ data-startover="1" data-lines="0">
 <p>Note: In the video I also go into number 1 part d.</p>
 <ol start="4" style="list-style-type: decimal">
 <li>Question 3 part a in the same assignment is asking about quantile
-(aka a percentile). We have to use
-<code>xqnorm(0.80,mean=153,sd=7.67)</code></li>
+(aka a percentile). Find the score of a student who scored in the 80th
+percentile on the Quantitative Reasoning section of the exam. The
+problem states the mean is 153 and the standard deviation is 7.67.</li>
 </ol>
+<p>We have to use <code>xqnorm(0.80,mean=153,sd=7.67)</code></p>
 </div>
 <div id="section-part-2-binomial-distribution" class="section level2">
 <h2>Part 2: Binomial Distribution</h2>
@@ -237,48 +248,47 @@ need help post in the forums.</p>
 <ul>
 <li>Use the little stop sign in the “tutorial tab”</li>
 </ul>
-<p><img src="images/tutorial_stop_sign.png" /></p>
-<p>
+<p><img src="images/tutorial_stop_sign.png" /> 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(mosaic)
 knitr::opts_chunk$set(echo = FALSE)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::register_http_handlers(session, metadata = NULL)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 session$onSessionEnded(function() {
         learnr:::session_stop_event(session)
       })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-norm-prob-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-norm-prob-code-editor`)), session)
 output$`tutorial-exercise-norm-prob-output` <- renderUI({
   `tutorial-exercise-norm-prob-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-binom-dist-plot-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-binom-dist-plot-code-editor`)), session)
 output$`tutorial-exercise-binom-dist-plot-output` <- renderUI({
   `tutorial-exercise-binom-dist-plot-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-binom-dist-exact-6-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-binom-dist-exact-6-code-editor`)), session)
 output$`tutorial-exercise-binom-dist-exact-6-output` <- renderUI({
   `tutorial-exercise-binom-dist-exact-6-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-binom-dist-up-to-6-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-binom-dist-up-to-6-code-editor`)), session)
 output$`tutorial-exercise-binom-dist-up-to-6-output` <- renderUI({

@@ -6,15 +6,22 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-library(learnr)
+
 library(mosaic)
 library(openintro)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+Verify Independence
+
+Verify the Success Failure Criterion
+
+```{r}
+tally(~num==1,data=exclusive_relationship)
+```
 
 ```{r exclusive-relationship}
-prop.test(~num == 1,data=, correct= "FALSE")
+prop.test(~num == 1,data=exclusive_relationship, correct= "FALSE")
 ```
 
 
