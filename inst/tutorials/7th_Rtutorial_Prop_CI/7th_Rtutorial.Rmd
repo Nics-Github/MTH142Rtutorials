@@ -65,10 +65,6 @@ tally(~num==1,data=exclusive_relationship)
 prop.test(~num ==______,data=_______,conf.level=, correct= "FALSE")
 ```
 
-```{r exclusive-relationship-0, exercise=TRUE, exercise.eval=FALSE, exercise.lines=3}
-prop.test(~num ==______,data=_______,conf.level=, correct= "FALSE")
-```
-
 ```{r exclusive-relationship-0-hint}
 prop.test(~num == 1,data=exclusive_relationship,conf.level=0.90, correct= "FALSE")
 ```
