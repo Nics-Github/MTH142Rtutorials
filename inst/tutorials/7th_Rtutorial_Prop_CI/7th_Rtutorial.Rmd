@@ -17,6 +17,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this tutorial I will show you how to calculate confidence intervals from a binomial distribution. We will do it twice. Once from a problem from HW 5 part 1 and again from the `exclusive_relationship` data set in the `openintro` library. We'll be using a problem from the [[OpenIntro]{.underline} Textbook](https://www.openintro.org/book/os/). Your assignment is on the last page.
 
+## Video
+
+Here's [the video](https://hcc-edu.zoom.us/rec/share/a2tW0FA8wG1pd0YNtKPeKPIxFoZHaCOQHXGJ0BU-CY6VfyqHh53vm-uRZaF2j7VE.rS4erNbhAe81ttSb) of me doing this tutorial
+
 ## C.I. From Statistics
 
 1.  Find HW 5 part 1 number 5. Here's the text of the problem:
@@ -55,7 +59,7 @@ library()
 
 ### Verify Independence and Success Failure Criterion
 
-First Verify Independence by reasoning through it (see video). Then check to be sure we have at least 10 successes and 10 failures. You can use the tally() function for that. 
+First Verify Independence by reasoning through it (see video). Then check to be sure we have at least 10 successes and 10 failures. You can use the tally() function for that.
 
 ```{r couting-success,exercise=TRUE, exercise.eval=FALSE}
 tally(~num==1,data=exclusive_relationship)
@@ -70,8 +74,6 @@ prop.test(~num == 1,data=exclusive_relationship,conf.level=0.90, correct= "FALSE
 ```
 
 \* If you want to use `view()` or `head()` to look at the data load the tidyverse. Otherwise just type `exclusive_relationship`
-
-
 
 ## Assignment
 
@@ -91,9 +93,7 @@ Knit your file as a pdf and submit it to the forums.
 
 ### Assignment Outline
 
-Here is the
-[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/7th_Rtutorial_Prop_CI/7th_Rtutorial_outline.txt).
-Copy and paste it from here and paste it into a new .rmd file.
+Here is the [outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/7th_Rtutorial_Prop_CI/7th_Rtutorial_outline.txt). Copy and paste it from here and paste it into a new .rmd file.
 
 ## Stop this tutorial when done
 
@@ -106,4 +106,3 @@ Don't forget to stop this tutorial. You can
 -   Use the little stop sign in the "tutorial tab"
 
 ![](images/tutorial_stop_sign.png)
-

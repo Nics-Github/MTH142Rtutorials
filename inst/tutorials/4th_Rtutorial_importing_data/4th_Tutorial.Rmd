@@ -15,6 +15,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 You will need to put data into R in order to do computations with it. This tutorial will help you do that, in order to complete your homework. Nothing is due for this tutorial, but we'll save our work in an .Rmd file so I can show some common issues that occur.
 
+## Video
+
+[Here's the video of me doing this tutorial.](https://www.youtube.com/watch?v=7GNyfoXsodM)
+
 ## Upload a spreadsheet file
 
 *This method is better for larger sets of data.*
@@ -88,9 +92,9 @@ Solution for case 3: Import your data again and copy and paste the code that pop
 
 `HW_2_1 <- read_excel("~/file/name/document.xlsx")`
 
-### Warning: Auto-converting formula to numeric.Error in fav_stats(~sample_data, HW_2_1) : 'language' object cannot be coerced to type 'double'
+### Warning: Auto-converting formula to numeric.Error in fav_stats(\~sample_data, HW_2\_1) : 'language' object cannot be coerced to type 'double'
 
-This happens when we use the older `fav_stats()` and not `favstats()`. 
+This happens when we use the older `fav_stats()` and not `favstats()`.
 
 Solution: Never use `fav_stats()`, only use `favstats()`.
 
