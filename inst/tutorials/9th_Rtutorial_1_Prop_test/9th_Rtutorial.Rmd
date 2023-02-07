@@ -130,7 +130,7 @@ You are to conduct a bare bones hypothesis test in R with data from a random yea
 
 -   Output your test an html file from an R Markdown file. I have posted a skeleton Rmarkdown for you to use.
 
--   Post the html output of your Rmarkdown file to the forum. See the video and my output for the format.
+-   Post the pdf output of your Rmarkdown file to the forum. See the video and my output for the format.
 
 ### Assignment Outline
 
