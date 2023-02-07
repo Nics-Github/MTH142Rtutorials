@@ -17,6 +17,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this tutorial I will show you how to use the `count()` and `tally()` functions. We'll use data from [OpenIntro](https://www.openintro.org/data/) .
 
+## Video
+
+Here's the [video](https://youtu.be/E8JWNIFWwt4) of me doing this tutorial
+
 ## tally() and count()
 
 1.  You will need to load the `mosaic` library for the functions and `openintro` for the data.
@@ -59,4 +63,3 @@ Don't forget to stop this tutorial. You can
 -   Use the little stop sign in the "tutorial tab"
 
 ![](images/tutorial_stop_sign.png)
-

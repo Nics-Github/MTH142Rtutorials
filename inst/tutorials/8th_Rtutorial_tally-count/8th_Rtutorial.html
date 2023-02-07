@@ -124,6 +124,11 @@ $(document).ready(function () {
 and <code>tally()</code> functions. We’ll use data from <a
 href="https://www.openintro.org/data/">OpenIntro</a> .</p>
 </div>
+<div id="section-video" class="section level2">
+<h2>Video</h2>
+<p>Here’s the <a href="https://youtu.be/E8JWNIFWwt4">video</a> of me
+doing this tutorial</p>
+</div>
 <div id="section-tally-and-count" class="section level2">
 <h2>tally() and count()</h2>
 <ol style="list-style-type: decimal">
@@ -176,34 +181,33 @@ pew_energy_2018 into a dataframe, to make it one type:</p>
 <ul>
 <li>Use the little stop sign in the “tutorial tab”</li>
 </ul>
-<p><img src="images/tutorial_stop_sign.png" /></p>
-<p>
+<p><img src="images/tutorial_stop_sign.png" /> 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(openintro)
 library(mosaic)
 knitr::opts_chunk$set(echo = FALSE)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::register_http_handlers(session, metadata = NULL)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 session$onSessionEnded(function() {
         learnr:::session_stop_event(session)
       })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-print-limit-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-print-limit-code-editor`)), session)
 output$`tutorial-exercise-print-limit-output` <- renderUI({
   `tutorial-exercise-print-limit-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-tally-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-tally-code-editor`)), session)
 output$`tutorial-exercise-tally-output` <- renderUI({
