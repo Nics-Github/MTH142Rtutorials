@@ -17,6 +17,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this Rtutorial we will use a famous dataset from one of the first modern statisticians, John Arbuthnot. We will also discuss how to make a proportion hypothesis test with a data set. This is the first of several types of hypothesis tests we will carry out in the second half of the semester.
 
+## Video
+
+Here is the [video](https://youtu.be/gE7x1U6qvpA) of me walking through the 9th Rtutorial.
+
 ## Randomly choose a data point
 
 1.  In the setup chunk of `library(mosaic)` and `library(openintro)`. Read about the arbuthnot data frame in openintro with `?arbuthnot`, feel free to read a bit about John Arbuthnot [here](https://en.wikipedia.org/wiki/John_Arbuthnot).
@@ -134,9 +138,7 @@ You are to conduct a bare bones hypothesis test in R with data from a random yea
 
 ### Assignment Outline
 
-Here is the
-[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/9th_Rtutorial_1_Prop_test/9th_Rtutorial_outline.txt).
-Copy and paste it from here and paste it into a new .rmd file.
+Here is the [outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/9th_Rtutorial_1_Prop_test/9th_Rtutorial_outline.txt). Copy and paste it from here and paste it into a new .rmd file.
 
 ## Stop this tutorial when done
 
@@ -149,4 +151,3 @@ Don't forget to stop this tutorial. You can
 -   Use the little stop sign in the "tutorial tab"
 
 ![](images/tutorial_stop_sign.png)
-

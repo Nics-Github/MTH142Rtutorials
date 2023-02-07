@@ -126,6 +126,11 @@ proportion hypothesis test with a data set. This is the first of several
 types of hypothesis tests we will carry out in the second half of the
 semester.</p>
 </div>
+<div id="section-video" class="section level2">
+<h2>Video</h2>
+<p>Here is the <a href="https://youtu.be/gE7x1U6qvpA">video</a> of me
+walking through the 9th Rtutorial.</p>
+</div>
 <div id="section-randomly-choose-a-data-point" class="section level2">
 <h2>Randomly choose a data point</h2>
 <ol style="list-style-type: decimal">
@@ -318,49 +323,48 @@ Copy and paste it from here and paste it into a new .rmd file.</p>
 <ul>
 <li>Use the little stop sign in the “tutorial tab”</li>
 </ul>
-<p><img src="images/tutorial_stop_sign.png" /></p>
-<p>
+<p><img src="images/tutorial_stop_sign.png" /> 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(mosaic)
 library(openintro)
 knitr::opts_chunk$set(echo = FALSE)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::register_http_handlers(session, metadata = NULL)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 session$onSessionEnded(function() {
         learnr:::session_stop_event(session)
       })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-libraries-view-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-libraries-view-code-editor`)), session)
 output$`tutorial-exercise-libraries-view-output` <- renderUI({
   `tutorial-exercise-libraries-view-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-random-number-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-random-number-code-editor`)), session)
 output$`tutorial-exercise-random-number-output` <- renderUI({
   `tutorial-exercise-random-number-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-prop-test-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-prop-test-code-editor`)), session)
 output$`tutorial-exercise-prop-test-output` <- renderUI({
   `tutorial-exercise-prop-test-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-optional-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-optional-code-editor`)), session)
 output$`tutorial-exercise-optional-output` <- renderUI({
