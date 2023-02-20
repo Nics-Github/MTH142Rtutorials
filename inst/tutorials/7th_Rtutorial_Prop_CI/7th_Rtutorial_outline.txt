@@ -24,6 +24,7 @@ tally(~num==1,data=exclusive_relationship)
 prop.test(~num == 1,data=exclusive_relationship, correct= "FALSE")
 ```
 
+I am 90% confident that the true proportion of undergraduates that have had exactly one exclusive relationship is between 20% and 30%.
 
 ## Assignment
 
