@@ -1,0 +1,62 @@
+---
+title: "Project 1"
+author: "name"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  pdf_document:
+  highlight: Null
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mosaic)
+library(openintro)
+pew_energy_dataframe <- as.data.frame(pew_energy_2018)
+
+```
+
+## Introduction
+
+ 
+```{r tally, echo=FALSE, comment=NA}
+
+tally(~coal_mining,data=pew_energy_dataframe)
+```
+
+
+## A bar graph
+
+
+```{r pew_energy_dataframe, echo=FALSE, comment=NA}
+gf_bar(~coal_mining,data=pew_energy_dataframe,xlab = "Would you favor an increase in Coal Mining for energy Production?", title="How do people feel about Coal Mining?")
+```
+
+## Making the confidence interval:
+
+### Independence 
+
+### Success failure Condition
+
+### Summary:
+
+To get p-hat notation type $\hat{p}$ 
+
+For the distribution notation type: 
+$\hat{p} \sim   N(\hat{p},SE)$
+
+Don't forget to change your $\hat{p}$ and standard error in the distribution notation above, also delete this sentence. Edit this two senteces above so they make sense in a report. 
+
+
+```{r confint, echo=FALSE, comment=NA}
+test_results<-prop.test(~coal_mining,success ="favor_increase",conf.level = 0.90, data= pew_energy_dataframe)
+
+test_results$conf.int
+```
+
+
+## Excercise
+
+
+
+## Conclusion
+
