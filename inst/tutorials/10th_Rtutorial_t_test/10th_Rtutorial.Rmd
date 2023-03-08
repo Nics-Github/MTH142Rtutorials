@@ -18,6 +18,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this tutorial we will get familiar with a few of the functions necessary to complete hypothesis testing and confidence interval building with the Student's t-distribution. For more information on the Student's t-distribution please see the chapter 7 reading section. There is no assignment associated with this section but you'll use these skills in your homework. 
 
+## Video:
+
+[Here is the video for this tutorial](https://youtu.be/Dyfb71EJ9sU)
+
 ## Hypothesis test setup
 
 1. I've preloaded the `mosaic` and `openintro` libraries. If you are working in a blank .Rmd file you'll have to load those. 
