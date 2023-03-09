@@ -33,13 +33,17 @@ Here's the text from the HW problem:
 HW_7_part_5_number_4
 ```
 
-## Pivot the table in R
+## Option 1: Pivot the table in R
 
 We need to reorganize the table so there are two columns. I'll do this first in R with some code then redo it in excel by copy and pasting. The first column I'll call `meeting_type` and will have the levels: `Face-to-Face`,`Hybrid`,`Online`. The second I'll call `final_grades` which will have all the values in it.
 
 We need a function from a new `library(dplyr)`. It is called `pivot_longer()` and takes `data`, `cols` or column names, the name of the new leveled column with `names_to` and the name of the new column with values in it called `values_to`. finally we have to save the new table with the `<-` operator.
 
 ```{r pivoted-table, exercise=TRUE}
+#This is the library with the pivot_longer() function
+
+library(dplyr)
+
 #This will make the two columns of the new "pivoted table" and save it as problem_4_pivoted
 
 problem_4_pivoted<- 
@@ -54,7 +58,7 @@ problem_4_pivoted<-
 problem_4_pivoted
 ```
 
-## Or pivot the table as a spreadsheet
+## Option #2: Pivot the table as a spreadsheet
 
 We need to reorganize the table so there are two columns. I'll do this first in R with some code then redo it in excel by copy and pasting. The first column I'll call `meeting_type` and will have the levels: `Face-to-Face`,`Hybrid`,`Online`. The second I'll call `final_grades` which will have all the values in it.
 
@@ -72,6 +76,14 @@ We have to check three things before we can run ANOVA
 3.  The variability across the groups is about equal.
 
 Luckily the problem tells us to assume these work out.
+
+There are three groups, and we are testing if the means of each group are equal the hypothesis notation looks like:
+
+$H_0: \mu_f = \mu_h =\mu_o$
+
+$H_1: \mu_f \ne \mu_h \ne \mu_o$
+
+$\alpha =0.05$
 
 1.  Now we must run the analysis. To execute and save the results type: `result_problem_4 <- aov(final_grades~meeting_type,data=problem_4_pivoted)`
 
@@ -95,7 +107,7 @@ problem_4_pivoted<-
 
     `anova(result_problem_4)`
 
-    in the chunk above.
+  in the chunk above.
 
 ## ANOVA from a dataset
 

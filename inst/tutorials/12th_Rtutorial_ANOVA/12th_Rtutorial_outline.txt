@@ -2,7 +2,7 @@
 title: "12R_tutorial_outline"
 author: "Schwab"
 date: "`r Sys.Date()`"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +34,7 @@ gf_boxplot(cesd~substance,data=yrbss)
 favstats(cesd~substance,data=yrbss)
 ```
 
-Change the notation below to match the correct number of means. 
+Change the notation below to match the correct number of means.
 
 $H_0: \mu_1 = \mu_2 =\mu_3$
 

@@ -145,8 +145,8 @@ data-lines="0">
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
 </div>
-<div id="section-pivot-the-table-in-r" class="section level2">
-<h2>Pivot the table in R</h2>
+<div id="section-option-1-pivot-the-table-in-r" class="section level2">
+<h2>Option 1: Pivot the table in R</h2>
 <p>We need to reorganize the table so there are two columns. I’ll do
 this first in R with some code then redo it in excel by copy and
 pasting. The first column I’ll call <code>meeting_type</code> and will
@@ -163,7 +163,11 @@ with the <code>&lt;-</code> operator.</p>
 <div class="tutorial-exercise" data-label="pivoted-table"
 data-caption="Code" data-completion="1" data-diagnostics="1"
 data-startover="1" data-lines="0">
-<pre class="text"><code>#This will make the two columns of the new &quot;pivoted table&quot; and save it as problem_4_pivoted
+<pre class="text"><code>#This is the library with the pivot_longer() function
+
+library(dplyr)
+
+#This will make the two columns of the new &quot;pivoted table&quot; and save it as problem_4_pivoted
 
 problem_4_pivoted&lt;- 
   pivot_longer(
@@ -178,9 +182,9 @@ problem_4_pivoted</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.checker":"NULL"}</script>
 </div>
 </div>
-<div id="section-or-pivot-the-table-as-a-spreadsheet"
+<div id="section-option-2-pivot-the-table-as-a-spreadsheet"
 class="section level2">
-<h2>Or pivot the table as a spreadsheet</h2>
+<h2>Option #2: Pivot the table as a spreadsheet</h2>
 <p>We need to reorganize the table so there are two columns. I’ll do
 this first in R with some code then redo it in excel by copy and
 pasting. The first column I’ll call <code>meeting_type</code> and will
@@ -206,6 +210,12 @@ import.</li>
 <li>The variability across the groups is about equal.</li>
 </ol>
 <p>Luckily the problem tells us to assume these work out.</p>
+<p>There are three groups, and we are testing if the means of each group
+are equal the hypothesis notation looks like:</p>
+<p><span class="math inline">\(H_0: \mu_f = \mu_h =\mu_o\)</span></p>
+<p><span class="math inline">\(H_1: \mu_f \ne \mu_h \ne
+\mu_o\)</span></p>
+<p><span class="math inline">\(\alpha =0.05\)</span></p>
 <ol style="list-style-type: decimal">
 <li>Now we must run the analysis. To execute and save the results type:
 <code>result_problem_4 &lt;- aov(final_grades~meeting_type,data=problem_4_pivoted)</code></li>
@@ -230,9 +240,9 @@ data-lines="0">
 <li><p>You can look at the results by adding
 <code>result_problem_4</code> but it doesn’t tell you much. To see the
 actual results type:</p>
-<p><code>anova(result_problem_4)</code></p>
-<p>in the chunk above.</p></li>
+<p><code>anova(result_problem_4)</code></p></li>
 </ol>
+<p>in the chunk above.</p>
 </div>
 <div id="section-anova-from-a-dataset" class="section level2">
 <h2>ANOVA from a dataset</h2>
