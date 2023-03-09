@@ -25,7 +25,7 @@ In this tutorial we'll use data from a homework problem to do a difference of me
 
 ## Diff of means with two vectors containing data
 
-1.  Import data from a homework problem. I've done this in the background for this tutorial, if you need a refresher see Rtutorial 4 or ask for on in the Rtutorial help forum. This problem comes from HW 7 part 4. I've named the Data `Problem_1_data`. Here's the text from that problem from the OpenIntro Book.
+1.  Import data from a homework problem. I've done this in the background for this tutorial, if you need a refresher see Rtutorial 4 or ask for one in the Rtutorial help forum. This problem comes from HW 7 part 4. I've named the Data `Problem_1_data`. Here's the text from that problem from the OpenIntro Book.
 
 *"Durable press" cotton fabrics are treated to improve their recovery from wrinkles after washing. "Wrinkle recovery angle" measures how well a fabric recovers from wrinkles. Higher is better. Here are data on the wrinkle recovery angle (in degrees) for a random sample of fabric specimens. Assume the populations are approximately normally distributed with unequal variances. A manufacturer believes that the mean wrinkle recovery angle for Hylite is better. A random sample of 25 Permafresh (group 1) and 20 Hylite (group 2) were measured. Test the claim using a 10% level of significance.*
 
