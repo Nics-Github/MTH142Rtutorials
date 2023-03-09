@@ -19,6 +19,10 @@ library(mosaic)
 
 In this tutorial, We'll format homework problems so that they can be put into R to complete an ANOVA test. We'll, of course, also do this with a data set. Your assignment is on the last page.
 
+## Video
+
+[Here is the video](https://youtu.be/fUZ_T_76uI8) of me doing this Rtutorial.
+
 ## ANOVA from a HW problem
 
 Here's the text from the HW problem:
@@ -92,10 +96,10 @@ $\alpha =0.05$
 
 problem_4_pivoted<- 
   pivot_longer(
-  data = HW_7_part_5_number_4,
-  cols = c("Face-to-Face","Hybrid","Online"), 
-  names_to = "meeting_type",
-  values_to = "final_grades"
+    data = HW_7_part_5_number_4,
+    cols = c("Face-to-Face","Hybrid","Online"), 
+    names_to = "meeting_type",
+    values_to = "final_grades"
   )
 ```
 

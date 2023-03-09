@@ -124,6 +124,11 @@ $(document).ready(function () {
 put into R to complete an ANOVA test. We’ll, of course, also do this
 with a data set. Your assignment is on the last page.</p>
 </div>
+<div id="section-video" class="section level2">
+<h2>Video</h2>
+<p><a href="https://youtu.be/fUZ_T_76uI8">Here is the video</a> of me
+doing this Rtutorial.</p>
+</div>
 <div id="section-anova-from-a-hw-problem" class="section level2">
 <h2>ANOVA from a HW problem</h2>
 <p>Here’s the text from the HW problem:</p>
@@ -225,10 +230,10 @@ data-caption="Code" data-completion="1" data-diagnostics="1"
 data-startover="1" data-lines="0">
 <pre class="text"><code>problem_4_pivoted&lt;- 
   pivot_longer(
-  data = HW_7_part_5_number_4,
-  cols = c(&quot;Face-to-Face&quot;,&quot;Hybrid&quot;,&quot;Online&quot;), 
-  names_to = &quot;meeting_type&quot;,
-  values_to = &quot;final_grades&quot;
+    data = HW_7_part_5_number_4,
+    cols = c(&quot;Face-to-Face&quot;,&quot;Hybrid&quot;,&quot;Online&quot;), 
+    names_to = &quot;meeting_type&quot;,
+    values_to = &quot;final_grades&quot;
   )</code></pre>
 </div>
 <div class="tutorial-exercise" data-label="ANOVA" data-caption="Code"
