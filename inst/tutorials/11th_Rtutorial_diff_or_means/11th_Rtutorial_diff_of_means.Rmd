@@ -21,7 +21,7 @@ In this tutorial we'll use data from a homework problem to do a difference of me
 
 ## Video
 
-Here is the video of me walking through this tutorial.
+[Here is the video](https://youtu.be/PMdiTji8AIA) of me walking through this tutorial.
 
 ## Diff of means with two vectors containing data
 
@@ -37,7 +37,7 @@ $H_0: \mu_p = \mu_h$
 
 $H_0: \mu_p < \mu_h$
 
-$\alpha = 0.5$
+$\alpha = 0.10$
 
 2.  The data was imported into R as a list so each treatment is a vector and we can call the vector with the `$` operator. With the code below we are doing a difference of means test between Hylite and Permafresh. The null hypothesis is that the difference should be 0. Note that the alternative= "less" because the manufacture thinks that Hylite is better and I listed Hylite second in the `t.test()`.
 
