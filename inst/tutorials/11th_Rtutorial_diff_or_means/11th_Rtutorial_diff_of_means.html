@@ -125,6 +125,10 @@ difference of means t.test. We will do this two times: once from a
 homework problem and once from a data set. Your assignment is on the
 last page.</p>
 </div>
+<div id="section-video" class="section level2">
+<h2>Video</h2>
+<p>Here is the video of me walking through this tutorial.</p>
+</div>
 <div id="section-diff-of-means-with-two-vectors-containing-data"
 class="section level2">
 <h2>Diff of means with two vectors containing data</h2>
@@ -132,7 +136,7 @@ class="section level2">
 <li>Import data from a homework problem. I’ve done this in the
 background for this tutorial, if you need a refresher see Rtutorial 4.
 I’ve named the Data <code>Problem_1_data</code>. Here’s the text from
-that problem from the OpenIntro Text</li>
+that problem from the OpenIntro Book</li>
 </ol>
 <p><em>“Durable press” cotton fabrics are treated to improve their
 recovery from wrinkles after washing. “Wrinkle recovery angle” measures
@@ -193,15 +197,15 @@ data-startover="1" data-lines="0">
 winning times for men’s and women’s category at the 5% signifigance
 level. Our notation would look like this:</li>
 </ol>
-<p><span class="math inline">\(H_0: \mu_m = \mu_h\)</span></p>
-<p><span class="math inline">\(H_0: \mu_p &lt; \mu_h\)</span></p>
+<p><span class="math inline">\(H_0: \mu_m = \mu_w\)</span></p>
+<p><span class="math inline">\(H_0: \mu_m \ne \mu_w\)</span></p>
 <p><span class="math inline">\(\alpha = 0.10\)</span></p>
 <ol start="3" style="list-style-type: decimal">
 <li>Take a look at the data again. Notice that <code>Men</code> and
 <code>Women</code> are in the same column in the variable
 <code>division</code>. These are called the levels of
-<code>division</code>. We used them in the 3rd_Rtutorial We’ll use them
-to run our test.</li>
+<code>division</code>. We discussed levels in the 3rd_Rtutorial. We’ll
+use them to run our test.</li>
 </ol>
 <pre><code>## 
 ##  Welch Two Sample t-test
@@ -215,7 +219,8 @@ to run our test.</li>
 ##   mean in group Men mean in group Women 
 ##            2.196544            2.507183</code></pre>
 <p>There’s scientific notation again, turn it off with
-<code>options(scipen=10)</code> or regonize that number rounds to 0.</p>
+<code>options(scipen=10)</code> or recognize that number rounds to
+0.</p>
 <p>The p-value is much less than alpha we reject the null and state that
 there is a difference.</p>
 </div>
