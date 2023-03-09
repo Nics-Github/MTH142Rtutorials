@@ -25,7 +25,7 @@ Here is the video of me walking through this tutorial.
 
 ## Diff of means with two vectors containing data
 
-1.  Import data from a homework problem. I've done this in the background for this tutorial, if you need a refresher see Rtutorial 4. I've named the Data `Problem_1_data`. Here's the text from that problem from the OpenIntro Book
+1.  Import data from a homework problem. I've done this in the background for this tutorial, if you need a refresher see Rtutorial 4 or ask for on in the Rtutorial help forum. This problem comes from HW 7 part 4. I've named the Data `Problem_1_data`. Here's the text from that problem from the OpenIntro Book.
 
 *"Durable press" cotton fabrics are treated to improve their recovery from wrinkles after washing. "Wrinkle recovery angle" measures how well a fabric recovers from wrinkles. Higher is better. Here are data on the wrinkle recovery angle (in degrees) for a random sample of fabric specimens. Assume the populations are approximately normally distributed with unequal variances. A manufacturer believes that the mean wrinkle recovery angle for Hylite is better. A random sample of 25 Permafresh (group 1) and 20 Hylite (group 2) were measured. Test the claim using a 10% level of significance.*
 
@@ -37,7 +37,7 @@ $H_0: \mu_p = \mu_h$
 
 $H_0: \mu_p < \mu_h$
 
-$\alpha = 0.10$
+$\alpha = 0.5$
 
 2.  The data was imported into R as a list so each treatment is a vector and we can call the vector with the `$` operator. With the code below we are doing a difference of means test between Hylite and Permafresh. The null hypothesis is that the difference should be 0. Note that the alternative= "less" because the manufacture thinks that Hylite is better and I listed Hylite second in the `t.test()`.
 
@@ -68,11 +68,11 @@ $H_0: \mu_m = \mu_w$
 
 $H_0: \mu_m \ne \mu_w$
 
-$\alpha = 0.10$
+$\alpha = 0.05$
 
 3.  Take a look at the data again. Notice that `Men` and `Women` are in the same column in the variable `division`. These are called the levels of `division`. We discussed levels in the 3rd_Rtutorial. We'll use them to run our test.
 
-```{r nyc-t-test,exercise}
+```{r nyc-t-test,exercise=TRUE}
 t.test(time_hrs~division,data=nyc_marathon, mu=0,alternative="two.sided")
 ```
 
