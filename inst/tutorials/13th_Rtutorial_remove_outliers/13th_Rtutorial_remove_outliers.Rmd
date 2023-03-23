@@ -3,7 +3,7 @@ title: "Tutorial 13: The filter() function (e.c)"
 author: "Nicholas Schwab"
 output: learnr::tutorial
 runtime: shiny_prerendered
-descriptions: "We'll use the pipe %>% and the filter() function to remove outliers from a dataset."
+descriptions: "We'll use the filter() function to remove outliers from a dataset."
 ---
 
 ```{r setup, include=FALSE}
@@ -18,6 +18,10 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Introduction
 
 In this optional tutorial we'll use the `filter()` function from the `tidyverse` library. We will use it to remove outliers from a set of data. There is no assignment for this tutorial, but completing it will allow you to earn 1 point extra credit on the project.
+
+## Video
+
+[Here](https://youtu.be/B21p2tk-vaE) is the video of me walking through this tutorial. 
 
 ## Setup
 
@@ -35,7 +39,7 @@ In this optional tutorial we'll use the `filter()` function from the `tidyverse`
 gf_boxplot(time_hrs~division,data=nyc_marathon)
 ```
 
-You should see boxplots for men and women winners of `nyc_marathon` runners. Not the many outliers showing slower runners.
+You should see boxplots for men and women winners of `nyc_marathon` runners. Note the many outliers showing slower runners.
 
 ## Finding the bounds for the fences
 
