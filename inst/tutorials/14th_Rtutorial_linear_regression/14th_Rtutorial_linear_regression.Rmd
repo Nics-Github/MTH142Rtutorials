@@ -17,6 +17,10 @@ knitr::opts_chunk$set(echo = FALSE)
 
 In this R Tutorial we'll walk through the process of making a linear regression model in R
 
+## Video
+
+Here is the [video](https://youtu.be/0SsWUmr9qAc) of me doing this RTutorial.
+
 ## Organize Data
 
 1.  The `mosaic` and `openintro` libraries have been preloaded.
@@ -25,7 +29,7 @@ In this R Tutorial we'll walk through the process of making a linear regression 
 
 *The data below was collected from manufacturer advertisements of their vehicles horsepower and highway gas mileage (mpg.). Use this data to answer the following questions.*
 
-The data from my version of the problem is below*, rename the vectors `x` and `y` as `hp` and `mpg`. 
+The data from my version of the problem is below\*, rename the vectors `x` and `y` as `hp` and `mpg`.
 
 ```{r data-input,exercise=TRUE}
 x <- c(158, 250, 340, 350, 390, 190, 220)
@@ -39,11 +43,11 @@ mpg <- c(33, 28, 15, 17, 11, 35, 42)
 
 ```
 
-\* We could have imported the data as a table but this felt faster. See tutorial 4 for information on that. 
+\* We could have imported the data as a table but this felt faster. See tutorial 4 for information on that.
 
 ## Make a scatter plot and linear regression
 
-1. In the chunk below make a scatter plot using `gf_point()` of `mpg` vs `hp`. 
+1.  In the chunk below make a scatter plot using `gf_point()` of `mpg` vs `hp`.
 
 ```{r prepare-scatter}
 hp <- c(158, 250, 340, 350, 390, 190, 220)
@@ -61,9 +65,7 @@ gf_point(mpg~hp)
 
 ```
 
-2. We can add a regression line by piping `gf_point()` to `gf_lm()` with `%>%` .
-
-
+2.  We can add a regression line by piping `gf_point()` to `gf_lm()` with `%>%` .
 
 ```{r line-plot, exercise=TRUE, exercise.setup="prepare-scatter"}
 #Note you don't need a data argument because we're dealing with two vectors, not a data frame. 
@@ -78,25 +80,24 @@ gf_point(mpg~hp) %>%
 
 ```
 
-You should add better axes labels and a good title. IN case you forget you can add this with the arguments `title= "title" `, `xlab= ""`,`ylab= ""` to the argument of `gf_point()`.
+You should add better axes labels and a good title. IN case you forget you can add this with the arguments `title= "title"`, `xlab= ""`,`ylab= ""` to the argument of `gf_point()`.
 
-## Find the correlation coefficient and equation. 
+## Find the correlation coefficient and equation.
 
-1. We can use the `lm()` to find the linear model that fits our data.  
-
+1.  We can use the `lm()` to find the linear model that fits our data.
 
 ```{r lm, exercise=TRUE, exercise.setup="prepare-scatter"}
 hp_mpg_model <- lm(mpg~hp)
 hp_mpg_model
 ```
 
-2. From the output of the model we can see that the equation is
+2.  From the output of the model we can see that the equation is
 
-$y=-0.1185 x + 57.9874$ 
+$y=-0.1185 x + 57.9874$
 
-where x is mpg and y is hp. 
+where x is hp and y is mpg.
 
-3. We can also use `msummary(hp_mpg_model)` to see the p-value for a hypothesis and the $r^2$ value. To see the correlation coefficient take the square root of r^2 or use `cor()`. Also note we can see the intercept and mpg values that we used to write the linear equation. 
+3.  We can also use `msummary(hp_mpg_model)` to see the p-value for a hypothesis and the $r^2$ value. To see the correlation coefficient take the square root of r\^2 or use `cor()`. Also note we can see the intercept and mpg values that we used to write the linear equation.
 
 ```{r summary-setup}
 hp <- c(158, 250, 340, 350, 390, 190, 220)
@@ -120,22 +121,17 @@ sqrt(0.8171)
 cor(mpg~hp)
 ```
 
-
-
-
-## Assignment 
+## Assignment
 
 5 points
 
-Make a linear regression model for `Age` vs `Price` from the `Mustangs` data frame from the `mosaic` package. 
+Make a linear regression model for `Age` vs `Price` from the `Mustangs` data frame from the `mosaic` package.
 
-Give the equation, correlation coefficient, a title, and good x and y axes labels. 
+Give the equation, correlation coefficient, a title, and good x and y axes labels.
 
-Knit your document as an html and post it to the forum. 
+Knit your document as an pdf and post it to the forum.
 
-Here is the
-[outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/14th_Rtutorial_linear_regression/14th_Rtutorial_outline.txt).
-Copy and paste it from here and paste it into a new .rmd file.
+Here is the [outline](https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/14th_Rtutorial_linear_regression/14th_Rtutorial_outline.txt). Copy and paste it from here and paste it into a new .rmd file.
 
 ## Stop this tutorial when done
 
@@ -148,4 +144,3 @@ Don't forget to stop this tutorial. You can
 -   Use the little stop sign in the "tutorial tab"
 
 ![](images/tutorial_stop_sign.png)
-

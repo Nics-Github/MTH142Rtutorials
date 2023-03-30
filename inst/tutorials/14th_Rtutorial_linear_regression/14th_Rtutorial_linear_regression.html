@@ -123,6 +123,11 @@ $(document).ready(function () {
 <p>In this R Tutorial we’ll walk through the process of making a linear
 regression model in R</p>
 </div>
+<div id="section-video" class="section level2">
+<h2>Video</h2>
+<p>Here is the <a href="https://youtu.be/0SsWUmr9qAc">video</a> of me
+doing this RTutorial.</p>
+</div>
 <div id="section-organize-data" class="section level2">
 <h2>Organize Data</h2>
 <ol style="list-style-type: decimal">
@@ -219,7 +224,7 @@ hp_mpg_model</code></pre>
 <li>From the output of the model we can see that the equation is</li>
 </ol>
 <p><span class="math inline">\(y=-0.1185 x + 57.9874\)</span></p>
-<p>where x is mpg and y is hp.</p>
+<p>where x is hp and y is mpg.</p>
 <ol start="3" style="list-style-type: decimal">
 <li>We can also use <code>msummary(hp_mpg_model)</code> to see the
 p-value for a hypothesis and the <span
@@ -262,7 +267,7 @@ cor(mpg~hp)</code></pre>
 <code>mosaic</code> package.</p>
 <p>Give the equation, correlation coefficient, a title, and good x and y
 axes labels.</p>
-<p>Knit your document as an html and post it to the forum.</p>
+<p>Knit your document as an pdf and post it to the forum.</p>
 <p>Here is the <a
 href="https://github.com/Nics-Github/MTH142Rtutorials/blob/master/inst/tutorials/14th_Rtutorial_linear_regression/14th_Rtutorial_outline.txt">outline</a>.
 Copy and paste it from here and paste it into a new .rmd file.</p>
@@ -277,56 +282,56 @@ Copy and paste it from here and paste it into a new .rmd file.</p>
 <ul>
 <li>Use the little stop sign in the “tutorial tab”</li>
 </ul>
-<p><img src="images/tutorial_stop_sign.png" /></p>
-<p>
+<p><img src="images/tutorial_stop_sign.png" /> 
 <script type="application/shiny-prerendered" data-context="server-start">
 library(learnr)
 library(mosaic)
 library(openintro)
 knitr::opts_chunk$set(echo = FALSE)
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::register_http_handlers(session, metadata = NULL)
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 session$onSessionEnded(function() {
         learnr:::session_stop_event(session)
       })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-data-input-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-data-input-code-editor`)), session)
 output$`tutorial-exercise-data-input-output` <- renderUI({
   `tutorial-exercise-data-input-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-scatter-plot-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-scatter-plot-code-editor`)), session)
 output$`tutorial-exercise-scatter-plot-output` <- renderUI({
   `tutorial-exercise-scatter-plot-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-line-plot-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-line-plot-code-editor`)), session)
 output$`tutorial-exercise-line-plot-output` <- renderUI({
   `tutorial-exercise-line-plot-result`()
 })
 </script>
-
-
+ 
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-lm-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-lm-code-editor`)), session)
 output$`tutorial-exercise-lm-output` <- renderUI({
   `tutorial-exercise-lm-result`()
 })
 </script>
- 
+
+
 <script type="application/shiny-prerendered" data-context="server">
 `tutorial-exercise-summary-result` <- learnr:::setup_exercise_handler(reactive(req(input$`tutorial-exercise-summary-code-editor`)), session)
 output$`tutorial-exercise-summary-output` <- renderUI({
