@@ -103,7 +103,7 @@ hp_mpg_model <- lm(hp~mpg)
 hp_mpg_model
 ```
 
-```{r summary, exercise=TRUE, exercise.setup="summary-setup"}
+```{r summary, exercise=TRUE, exercise.setup="prepare-scatter"}
 msummary()
 sqrt()
 cor()
