@@ -99,8 +99,10 @@ where x is mpg and y is hp.
 3. We can also use `msummary(hp_mpg_model)` to see the p-value for a hypothesis and the $r^2$ value. To see the correlation coefficient take the square root of r^2 or use `cor()`. Also note we can see the intercept and mpg values that we used to write the linear equation. 
 
 ```{r summary-setup}
+hp <- c(158, 250, 340, 350, 390, 190, 220)
+mpg <- c(33, 28, 15, 17, 11, 35, 42)
 hp_mpg_model <- lm(hp~mpg)
-hp_mpg_model
+
 ```
 
 ```{r summary, exercise=TRUE, exercise.setup="summary-setup"}
