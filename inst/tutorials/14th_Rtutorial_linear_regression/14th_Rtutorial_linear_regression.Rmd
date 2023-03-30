@@ -25,7 +25,7 @@ In this R Tutorial we'll walk through the process of making a linear regression 
 
 *The data below was collected from manufacturer advertisements of their vehicles horsepower and highway gas mileage (mpg.). Use this data to answer the following questions.*
 
-The data from my version of the problem is below*, rename the vectors `x` and `y` as `horsepower` and `mpg`. 
+The data from my version of the problem is below*, rename the vectors `x` and `y` as `hp` and `mpg`. 
 
 ```{r data-input,exercise=TRUE}
 x <- c(158, 250, 340, 350, 390, 190, 220)
@@ -84,7 +84,8 @@ You should add better axes labels and a good title. IN case you forget you can a
 
 1. We can use the `lm()` to find the linear model that fits our data.  
 
-```{r lm, exercise=TRUE}
+
+```{r lm, exercise=TRUE, exercise.setup="prepare-scatter"}
 hp_mpg_model <- lm(hp~mpg)
 hp_mpg_model
 ```
@@ -102,7 +103,7 @@ hp_mpg_model <- lm(hp~mpg)
 hp_mpg_model
 ```
 
-```{r summary, exercise=TRUE}
+```{r summary, exercise=TRUE, exercise.setup="summary-setup"}
 msummary()
 sqrt()
 cor()
@@ -119,9 +120,6 @@ cor(hp~mpg)
 
 
 
-Step 7. Notice when I knitted I needed to bring the data into R I did this by adding the following to the setup chunk.
-
-library(readxl) Rtut_13 \<- read_excel("Rtut_13.xlsx")
 
 ## Assignment 
 
