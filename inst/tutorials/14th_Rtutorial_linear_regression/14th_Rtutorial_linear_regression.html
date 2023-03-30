@@ -176,7 +176,7 @@ gf_point(____~____)</code></pre>
 <div class="tutorial-exercise-support" data-label="scatter-plot-hint"
 data-caption="Code" data-completion="1" data-diagnostics="1"
 data-startover="1" data-lines="0">
-<pre class="text"><code>gf_point(hp~mpg)</code></pre>
+<pre class="text"><code>gf_point(mpg~hp)</code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>We can add a regression line by piping <code>gf_point()</code> to
@@ -193,8 +193,8 @@ gf_point(____~____) %&gt;%
 <div class="tutorial-exercise-support" data-label="line-plot-hint"
 data-caption="Code" data-completion="1" data-diagnostics="1"
 data-startover="1" data-lines="0">
-<pre class="text"><code>gf_point(hp~mpg) %&gt;%
-  gf_lm(hp~mpg)</code></pre>
+<pre class="text"><code>gf_point(mpg~hp) %&gt;%
+  gf_lm(mpg~hp)</code></pre>
 </div>
 <p>You should add better axes labels and a good title. IN case you
 forget you can add this with the arguments <code>title= "title"</code>,
@@ -211,14 +211,14 @@ our data.</li>
 <div class="tutorial-exercise" data-label="lm" data-caption="Code"
 data-completion="1" data-diagnostics="1" data-startover="1"
 data-lines="0">
-<pre class="text"><code>hp_mpg_model &lt;- lm(hp~mpg)
+<pre class="text"><code>hp_mpg_model &lt;- lm(mpg~hp)
 hp_mpg_model</code></pre>
 <script type="application/json" data-opts-chunk="1">{"fig.width":6.5,"fig.height":4,"fig.retina":2,"fig.align":"default","fig.keep":"high","fig.show":"asis","out.width":624,"warning":true,"error":false,"message":true,"exercise.df_print":"paged","exercise.setup":"prepare-scatter","exercise.checker":"NULL"}</script>
 </div>
 <ol start="2" style="list-style-type: decimal">
 <li>From the output of the model we can see that the equation is</li>
 </ol>
-<p><span class="math inline">\(y=-6.896 x + 449.448\)</span></p>
+<p><span class="math inline">\(y=-0.1185 x + 57.9874\)</span></p>
 <p>where x is mpg and y is hp.</p>
 <ol start="3" style="list-style-type: decimal">
 <li>We can also use <code>msummary(hp_mpg_model)</code> to see the
@@ -233,7 +233,7 @@ data-caption="Code" data-completion="1" data-diagnostics="1"
 data-startover="1" data-lines="0">
 <pre class="text"><code>hp &lt;- c(158, 250, 340, 350, 390, 190, 220)
 mpg &lt;- c(33, 28, 15, 17, 11, 35, 42)
-hp_mpg_model &lt;- lm(hp~mpg)</code></pre>
+hp_mpg_model &lt;- lm(mpg~hp)</code></pre>
 </div>
 <div class="tutorial-exercise" data-label="summary" data-caption="Code"
 data-completion="1" data-diagnostics="1" data-startover="1"
@@ -251,7 +251,7 @@ data-startover="1" data-lines="0">
 #When taking the square root of r^2 you have to consider the sign + or - of r.  
 sqrt(0.8171)
 
-cor(hp~mpg)</code></pre>
+cor(mpg~hp)</code></pre>
 </div>
 </div>
 <div id="section-assignment" class="section level2">

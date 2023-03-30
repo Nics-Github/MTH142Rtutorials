@@ -57,7 +57,7 @@ gf_point(____~____)
 ```
 
 ```{r scatter-plot-hint}
-gf_point(hp~mpg)
+gf_point(mpg~hp)
 
 ```
 
@@ -73,8 +73,8 @@ gf_point(____~____) %>%
 ```
 
 ```{r line-plot-hint}
-gf_point(hp~mpg) %>%
-  gf_lm(hp~mpg)
+gf_point(mpg~hp) %>%
+  gf_lm(mpg~hp)
 
 ```
 
@@ -86,13 +86,13 @@ You should add better axes labels and a good title. IN case you forget you can a
 
 
 ```{r lm, exercise=TRUE, exercise.setup="prepare-scatter"}
-hp_mpg_model <- lm(hp~mpg)
+hp_mpg_model <- lm(mpg~hp)
 hp_mpg_model
 ```
 
 2. From the output of the model we can see that the equation is
 
-$y=-6.896 x + 449.448$ 
+$y=-0.1185 x + 57.9874$ 
 
 where x is mpg and y is hp. 
 
@@ -101,7 +101,7 @@ where x is mpg and y is hp.
 ```{r summary-setup}
 hp <- c(158, 250, 340, 350, 390, 190, 220)
 mpg <- c(33, 28, 15, 17, 11, 35, 42)
-hp_mpg_model <- lm(hp~mpg)
+hp_mpg_model <- lm(mpg~hp)
 
 ```
 
@@ -117,7 +117,7 @@ msummary(hp_mpg_model)
 #When taking the square root of r^2 you have to consider the sign + or - of r.  
 sqrt(0.8171)
 
-cor(hp~mpg)
+cor(mpg~hp)
 ```
 
 
